@@ -1,0 +1,31 @@
+.rating label:before
+{
+  margin: 0px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f006";
+}
+.rating > input { display: none; } 
+.rating > label {
+    float: right;
+}
+.ratingparent
+{
+    float: left;
+}
+
+.rating > label:hover ~ label, 
+.rating > label:hover, 
+.rating > input:checked ~ label, 
+.rating > input:not(:checked) ~ label:hover ~ label,
+.rating > input:not(:checked) ~ label:hover
+{
+ color: red;
+}
+
+.rating > input:checked ~ label
+{
+    color: pink;
+}
+
